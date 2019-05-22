@@ -33,4 +33,3 @@ class Square:
             slash = "#" * (self.size)
             for idx in range(self.size):
                 print("{}".format(slash))
-
