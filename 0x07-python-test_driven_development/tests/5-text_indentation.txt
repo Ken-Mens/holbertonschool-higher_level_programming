@@ -1,0 +1,29 @@
+text_indentation function
+--------------------------------
+import module:
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+>>> text_indentation("""I am Sam: Sam I am.""")
+I am Sam:
+<BLANKLINE>
+Sam I am.
+<BLANKLINE>
+
+>>> text_indentation("     ")
+<BLANKLINE>
+
+>>> text_indentation("   Hi.   ")
+Hi.
+<BLANKLINE>
+
+>>> text_indentation(" Hello? ")
+Hello?
+<BLANKLINE>
+
+>>> text_indentation(" : . ? ")
+:
+<BLANKLINE>
+.
+<BLANKLINE>
+?
+<BLANKLINE>
