@@ -1,0 +1,15 @@
+my_list function
+--------------------------------
+import module:
+>>> MyList = __import__('1-my_list').MyList
+>>> list1 = MyList()
+>>> isinstance(list1, MyList)
+    True
+
+>>> print_sorted = __import__('1-my_list').MyList.print_sorted
+
+>>> print_sorted([8, 4, 6, 11])
+    [4, 6, 8, 11]
+
+>>> print_sorted([1, -6, 4])
+    [-6, 1, 4]

@@ -1,0 +1,22 @@
+BaseGeometry function
+--------------------------------
+import module:
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+ 
+>>> BG = BaseGeometry()
+>>> isinstance(BG, BaseGeometry)
+    True
+
+>>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
+>>> type(integer_validator)
+    <class 'function'>
+
+>>> BG.integer_validator('xxx', 66.6)
+    Traceback (most recent call last):
+    TypeError: xxx must be an integer
+
+>>> BG.integer_validator('xxx', [4, 4, 4])
+    Traceback (most recent call last):
+
+>>> BG.integer_validator('Bob', 'string')
+    Traceback (most recent call last):
