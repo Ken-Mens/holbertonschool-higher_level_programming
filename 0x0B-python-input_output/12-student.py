@@ -8,5 +8,6 @@ class Student():
     def to_json(self, attrs=None):
         if attrs is None:
             return (self.__dict__)
-        return ({key: value for key, value in self.__dict__.items()
-                 if key in attrs})
+        else:
+            return ({keys: doors for keys, doors in self.__dict__.items()
+            if keys in attrs})
