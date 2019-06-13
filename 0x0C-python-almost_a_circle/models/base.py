@@ -42,7 +42,11 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Checks to create"""
-        tempo = cls(1, 1)
+        from models.rectangle import Rectangle
+        if type(cls) is Rectangle:
+            tempo = cls(1, 1)
+        else:
+            tempo = cls(1)
         tempo.update(**dictionary)
         return (tempo)
 
