@@ -11,6 +11,7 @@ class TestSquare(unittest.TestCase):
     """Class runs multiple tests Square"""
     @classmethod
     def setUp(self):
+        """sets up instances"""
         Base._Base__nb_objects = 0
         cls.s1 = Square(9)
         cls.s2 = Square(7, 8)
@@ -78,4 +79,5 @@ class TestSquare(unittest.TestCase):
 
     @classmethod
     def tearDown(self):
+        """clears the board """
         pass
