@@ -12,6 +12,7 @@ class TestBase(unittest.TestCase):
     """Tests for base"""
     @classmethod
     def setUp(cls):
+        """Tests setUp"""
         Base._Base__nb_objects = 0
         cls.b1 = Base()
         cls.b2 = Base()
@@ -40,4 +41,5 @@ class TestBase(unittest.TestCase):
 
     @classmethod
     def tearDown(self):
+        """Tests for TearDown"""
         pass
