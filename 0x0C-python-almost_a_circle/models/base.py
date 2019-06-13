@@ -36,7 +36,7 @@ class Base:
     def from_json_string(json_string):
         """Checks json string"""
         if json_string is None:
-            json_string = []
+            return []
         return (json.loads(json_string))
 
     @classmethod
