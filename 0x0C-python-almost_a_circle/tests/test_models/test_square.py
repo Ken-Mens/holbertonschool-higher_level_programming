@@ -10,7 +10,7 @@ from models.rectangle import Rectangle
 class TestSquare(unittest.TestCase):
     """Class runs multiple tests Square"""
     @classmethod
-    def setUp(self):
+    def setUp(cls):
         """sets up instances"""
         Base._Base__nb_objects = 0
         cls.s1 = Square(9)
@@ -29,8 +29,8 @@ class TestSquare(unittest.TestCase):
         """Test area()"""
         self.assertEqual(self.s1.area(), 81)
         self.assertEqual(self.s2.area(), 49)
-        self.assertEqual(self.s3.area(), 32)
-        self.assertEqual(self.s4.area(), 4)
+        self.assertEqual(self.s3.area(), 64)
+        self.assertEqual(self.s4.area(), 16)
 
     def test_size(self):
         """ test size """
@@ -48,17 +48,17 @@ class TestSquare(unittest.TestCase):
 
     def test_y(self):
         """ test y """
-        self.assertEqual(self.s1.y, 4)
-        self.assertEqual(self.s2.y, 9)
-        self.assertEqual(self.s3.y, 6)
-        self.assertEqual(self.s4.y, 1)
+        self.assertEqual(self.s1.y, 0)
+        self.assertEqual(self.s2.y, 0)
+        self.assertEqual(self.s3.y, 4)
+        self.assertEqual(self.s4.y, 2)
 
     def test_id(self):
         """ test id """
-        self.assertEqual(self.s1.id, 8)
-        self.assertEqual(self.s2.id, 6)
+        self.assertEqual(self.s1.id, 1)
+        self.assertEqual(self.s2.id, 2)
         self.assertEqual(self.s3.id, 3)
-        self.assertEqual(self.s4.id, 5)
+        self.assertEqual(self.s4.id, 9)
 
     def test_init_negative_size(self):
         """Initialize with negative value"""
@@ -69,13 +69,13 @@ class TestSquare(unittest.TestCase):
     def test_str(self):
         """Testing the __str__ """
         self.assertEqual(Square.__str__
-                         (self.s1), "[Square] (11) 0/0 - 9")
+                         (self.s1), '[Square] (1) 0/0 - 9')
         self.assertEqual(Square.__str__
-                         (self.s2), "[Square] (12) 0/0 - 8")
+                         (self.s2), '[Square] (2) 8/0 - 7')
         self.assertEqual(Square.__str__
-                         (self.s3), "[Square] (13) 2/0 - 7")
+                         (self.s3), '[Square] (3) 3/4 - 8')
         self.assertEqual(Square.__str__
-                         (self.s4), "[Square] (14) 1/2 - 4")
+                         (self.s4), "[Square] (9) 1/2 - 4")
 
     @classmethod
     def tearDown(self):

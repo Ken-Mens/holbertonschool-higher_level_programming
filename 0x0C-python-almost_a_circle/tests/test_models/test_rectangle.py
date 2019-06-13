@@ -21,10 +21,10 @@ class TestRectangle(unittest.TestCase):
 
     def test_id(self):
         """ test id  """
-        self.assertEqual(self.r1.id, 11)
-        self.assertEqual(self.r2.id, 4)
+        self.assertEqual(self.r1.id, 5)
+        self.assertEqual(self.r2.id, 6)
         self.assertEqual(self.r3.id, 7)
-        self.assertEqual(self.r4.id, 6)
+        self.assertEqual(self.r4.id, 8)
 
     def test_width(self):
         """Testing width"""
@@ -42,19 +42,17 @@ class TestRectangle(unittest.TestCase):
 
     def test_x(self):
         """Tests for x"""
-        self.assertEqual(self.r1.x, 8)
-        self.assertEqual(self.r2.x, 5)
-        self.assertEqual(self.r3.x, 7)
-        self.assertEqual(self.r4.x, 7)
-        self.assertEqual(self.r5.x, 6)
+        self.assertEqual(self.r1.x, 0)
+        self.assertEqual(self.r2.x, 0)
+        self.assertEqual(self.r3.x, 9)
+        self.assertEqual(self.r4.x, 3)
 
     def test_y(self):
         """Tests for y"""
-        self.assertEqual(self.r1.y, 9)
-        self.assertEqual(self.r2.y, 8)
-        self.assertEqual(self.r3.y, 5)
+        self.assertEqual(self.r1.y, 0)
+        self.assertEqual(self.r2.y, 0)
+        self.assertEqual(self.r3.y, 0)
         self.assertEqual(self.r4.y, 2)
-        self.assertEqual(self.r5.y, 7)
 
     def test_area(self):
         """ test area """

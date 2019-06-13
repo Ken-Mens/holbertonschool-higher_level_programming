@@ -11,7 +11,7 @@ from models.square import Square
 class TestBase(unittest.TestCase):
     """Tests for base"""
     @classmethod
-    def setUp(self):
+    def setUp(cls):
         Base._Base__nb_objects = 0
         cls.b1 = Base()
         cls.b2 = Base()
@@ -33,13 +33,9 @@ class TestBase(unittest.TestCase):
         self.assertEqual(self.b4.id, "eleven")
         self.assertEqual(self.b5.id, 4.4)
 
-    def test_from_json(self):
-        """ test from_json_string """
-        self.assertEqual(Base.from_json_string(None), [])
-
     def test_16_0_saveToFile(self):
         """Checks to make sure file created and written"""
-        Rectangle.save_to_file([self.r2, self.r3])
+        Rectangle.save_to_file([self.r1, self.r2])
         self.assertTrue(os.path.isfile("Rectangle.json"))
 
     @classmethod
