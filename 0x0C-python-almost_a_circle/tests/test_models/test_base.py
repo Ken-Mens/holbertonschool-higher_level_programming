@@ -39,6 +39,10 @@ class TestBase(unittest.TestCase):
         Rectangle.save_to_file([self.r1, self.r2])
         self.assertTrue(os.path.isfile("Rectangle.json"))
 
+    def test_create(self):
+        s1 = Square.create(**{'size': 2})
+        self.assertEqual(str(s1), '[Square] (5) 0/0 - 2')
+
     @classmethod
     def tearDown(self):
         """Tests for TearDown"""
