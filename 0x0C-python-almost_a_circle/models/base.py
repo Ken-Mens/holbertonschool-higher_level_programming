@@ -43,6 +43,7 @@ class Base:
     def create(cls, **dictionary):
         """Checks to create"""
         from models.rectangle import Rectangle
+        from models.square import Square
         if type(cls) is Rectangle:
             tempo = cls(1, 1)
         else:
