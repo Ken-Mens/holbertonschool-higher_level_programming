@@ -29,8 +29,8 @@ class TestSquare(unittest.TestCase):
         """Test area()"""
         self.assertEqual(self.s1.area(), 81)
         self.assertEqual(self.s2.area(), 49)
-        self.assertEqual(self.s3.area(), 64)
-        self.assertEqual(self.s4.area(), 16)
+        self.assertEqual(self.s3.area(), 32)
+        self.assertEqual(self.s4.area(), 4)
 
     def test_size(self):
         """ test size """
