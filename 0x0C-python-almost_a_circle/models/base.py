@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Checks Base to work properly"""
 import json
 
 
