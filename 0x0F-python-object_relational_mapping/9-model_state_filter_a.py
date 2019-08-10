@@ -20,8 +20,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=eng)
     sesh = Session()
 
-    for state in sesh.query(State) \
-        .order_by(State.id):
+    for state in sesh.query(State).order_by(State.id):
         if 'a' in state.name:
             print("{}: {}".format(state.id, state.name))
 
