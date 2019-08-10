@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# 0-select_states.py: lists all states from database hbtn_0e_0_usa
+""" 0-select_states list all states from database
+"""
+
 
 if __name__ == "__main__":
 
