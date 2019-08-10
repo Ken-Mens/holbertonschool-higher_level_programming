@@ -4,13 +4,13 @@
 
 
 if __name__ == "__main__":
-
+    import MySQLdb
     from sys import argv
+
     username = argv[1]
     password = argv[2]
     database = argv[3]
 
-    import MySQLdb
     db = MySQLdb.connect(host='localhost', port=3306,
                          user=username, passwd=password,
                          db=database)
