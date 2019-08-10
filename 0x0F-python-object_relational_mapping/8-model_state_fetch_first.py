@@ -17,11 +17,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=eng)
     sesh = Session()
 
-    for state in sesh.query(State).order_by(State.id):
-        print('{}: {}'.format(state.id, state.name))
-
-    Base.metadata.create_all(eng)
-
     Session = sessionmaker(bind=eng)
     sesh = Session()
 
