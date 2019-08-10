@@ -2,6 +2,7 @@
 # 0-select_states.py: lists all states from database hbtn_0e_0_usa
 """ script that filters states """
 
+
 if __name__ == "__main__":
 
     from sys import argv
@@ -15,7 +16,8 @@ if __name__ == "__main__":
                          db=database)
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER by id ASC")
+    cur.execute("SELECT * FROM states WHERE\
+                name LIKE BINARY 'N%' ORDER by id ASC")
 
     rows = cur.fetchall()
     for row in rows:
