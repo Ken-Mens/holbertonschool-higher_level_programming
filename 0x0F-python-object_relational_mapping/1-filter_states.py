@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# 0-select_states.py: lists all states from database hbtn_0e_0_usa
 """ script that filters states """
 
 
