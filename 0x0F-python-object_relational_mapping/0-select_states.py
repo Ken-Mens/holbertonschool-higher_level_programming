@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # 0-select_states.py: lists all states from database hbtn_0e_0_usa
-""" Write a script that lists all states from the database hbtn_0e_0_usa:
-"""
+
 if __name__ == "__main__":
 
     from sys import argv
