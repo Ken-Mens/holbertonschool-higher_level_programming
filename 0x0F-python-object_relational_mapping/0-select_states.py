@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# script that will list all states from databases
 """ 0-select_states list all states from database
 """
 
