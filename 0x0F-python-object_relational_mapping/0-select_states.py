@@ -12,16 +12,16 @@ if __name__ == "__main__":
     password = argv[2]
     database = argv[3]
 
-    db = MySQLdb.connect(host='localhost', port=3306,
-                         user=username, passwd=password,
-                         db=database)
-    cur = db.cursor()
+    ask = MySQLdb.connect(host='localhost', port=3306,
+                          user=username, passwd=password,
+                          db=database)
+    curse = ask.cursor()
 
-    cur.execute('SELECT * FROM states ORDER by id ASC')
+    curse.execute('SELECT * FROM states ORDER by id ASC')
 
-    rows = cur.fetchall()
+    rows = curse.fetchall()
     for row in rows:
         print (row)
 
-    cur.close()
-    db.close()
+    curse.close()
+    ask.close()
