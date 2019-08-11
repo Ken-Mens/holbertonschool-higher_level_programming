@@ -5,6 +5,7 @@ from model_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
+import MySQLdb
 
 username = argv[1]
 password = argv[2]
