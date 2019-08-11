@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # script that will list all states from databases
-""" 0-select_states list all states from database
-"""
 
 
 if __name__ == "__main__":
+    """ 0-select_states list all states from database
+    """
     import MySQLdb
     from sys import argv
 
