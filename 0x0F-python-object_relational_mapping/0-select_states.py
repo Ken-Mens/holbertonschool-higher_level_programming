@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     rows = curse.fetchall()
     for row in rows:
-        print (row)
+        print(row)
 
     curse.close()
     ask.close()
