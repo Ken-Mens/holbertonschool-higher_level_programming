@@ -21,5 +21,5 @@ if __name__ == '__main__':
     sesh = Session()
     ok = sesh.query(State, City)
 
-    for state, city in ok.filter(City.state_id == State.id).order_by(City.id):
+    for state, city in ok.filter(City.state_id == State.id).order_by(City.id).all():
         print("{}: ({}) {}".format(state.name, city.id, city.name))
