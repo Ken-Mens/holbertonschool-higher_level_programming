@@ -6,7 +6,6 @@ const inp = process.argv[3];
 request.get(av, (err, res, body) => {
   if (err) {
     console.log(err);
-    return;
   }
   fs.writeFile(inp, body, (err) => {
     if (err) console.log(err);
