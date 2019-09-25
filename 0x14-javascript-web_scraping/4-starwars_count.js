@@ -1,9 +1,8 @@
 #!/usr/bin/node
 const check = 'https://swapi.co/api/people/18/';
 const request = require('request');
-const ap = process.argv[2];
 let counter = 0;
-request.get(ap, (err, res, body) => {
+request.get(process.argv[2], (err, res, body) => {
   if (err) {
     console.log(err);
   } else {
