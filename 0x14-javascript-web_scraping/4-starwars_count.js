@@ -6,7 +6,7 @@ request.get(process.argv[2], (err, res, body) => {
   if (err) {
     console.log(err);
   } else {
-    const resp = JSON.parse(body);
+    let resp = JSON.parse(body);
     for (const x in resp.results) {
       if (resp.results[x].characters.includes(check)) { counter++; }
     }
