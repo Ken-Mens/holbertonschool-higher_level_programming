@@ -6,8 +6,10 @@ request.get(process.argv[2], (err, res, body) => {
     console.log(err);
   } else {
     const resp = JSON.parse(body);
-    for (const x in resp.results) {
-      if (resp.results[x].characters.includes('https://swapi.co/api/people/18/')) { counter++; }
+    for (let x = 0; x < resp.results.length; x++) {
+      for (let y = 0; y < resp.results[x].characters.length; y++) {
+        if (resp.results[x].characters[y].includes('18')) { counter++; }
+      }
     }
     console.log(counter);
   }
