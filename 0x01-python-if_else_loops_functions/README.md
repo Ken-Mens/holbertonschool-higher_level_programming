@@ -76,6 +76,9 @@ What you should learn from this project:
 ### [12. Fizz Buzz](./12-fizzbuzz.py)
 * Write a function that prints the numbers from 1 to 100 separated by a space. 
 
+### [13. Smile in the mirror](./100-print_tebahpla.py)
+* Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase.
+
 ---
 
 ## Author
