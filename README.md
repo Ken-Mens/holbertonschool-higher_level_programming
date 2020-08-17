@@ -1,5 +1,8 @@
 # holbertonschool-higher_level_programming
 
+   ![Image description](https://miro.medium.com/max/720/1*8j2PmhExz4q87OoddaH7ag.png)
+
+
 This repository contains all projects written in Python for the Higher level programming & Algorithm curriculum at Holberton School.
 
 | Project | Description
